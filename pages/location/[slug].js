@@ -56,8 +56,11 @@ export default function Location () {
 
     const router = useRouter()
     const { slug } = router.query
-    const getTitleName = slug.split('_')
-    const currentTitle = title.find( title => title.name === getTitleName[0] )
+    let getTitleName, currentTitle    
+    if(slug) {
+        getTitleName = slug.split('_')
+        currentTitle = title.find( title => title.name === getTitleName[0] )
+    }
 
     return (
         <div className="bg-gray-200 font-sans leading-normal tracking-normal">
@@ -78,7 +81,7 @@ export default function Location () {
                     </div>
                     <div className="lg:w-2/3 px-5 py-24 mt-32 mx-auto flex flex-wrap justify-center">
                         <h2 className="sm:text-3xl mr-2 text-2xl text-gray-900 font-medium title-font mb-2">
-                            {currentTitle ? currentTitle.title : 'Not Found' }
+                            { slug ? (currentTitle ? currentTitle.title : 'Not Found') : 'Not Found' }
                         </h2>
                         <div className="pl-6">                            
                             <div className="flex md:mt-4 mt-6">

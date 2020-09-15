@@ -1,5 +1,5 @@
 {
-  "name": "with-tailwindcss",
+  "name": "organiriage",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
@@ -7,6 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "cloudinary-react": "^1.6.6",
     "next": "latest",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

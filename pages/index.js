@@ -11,7 +11,7 @@ import Testimonial from '../components/testimonial'
 
 export default function IndexPage() {
   return (
-    <div  className="bg-gray-200 font-sans leading-normal tracking-normal">
+    <div  className="bg-gray-200 font-sans leading-normal tracking-normal w-full">
       {/* Header */}
       <Header />		
       {/*Container*/}

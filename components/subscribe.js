@@ -1,8 +1,18 @@
 import React from 'react'
+import withReactContent from 'sweetalert2-react-content'
+import Swal from 'sweetalert2'
+
+const MySwal = withReactContent(Swal)
 
 function handleSubmit (e) {
     e.preventDefault()
-    alert('Vous vous êtes souscrit à notre newsletter')
+
+    MySwal.fire({
+        icon: 'success',
+        title: 'Success',
+        text: 'Vous venez de souscrire à notre newsletter',
+        footer: '<a href="https://github.com/serdiDev" >Organiriage, par serdiDev</a>',        
+    })
 }
 
 export default function subscribe() {    

@@ -1,9 +1,19 @@
 import React from 'react'
 import Footer from '../components/footer'
 import Nav from '../components/nav'
+import withReactContent from 'sweetalert2-react-content'
+import Swal from 'sweetalert2'
+
+const MySwal = withReactContent(Swal)
+
 function handleSubmit (e) {
     e.preventDefault()
-    alert('Votre message a bien été envoyé')
+    MySwal.fire({
+        icon: 'success',
+        title: 'Success',
+        text: 'Votre message a bien été envoyé',
+        footer: '<a href="https://github.com/serdiDev">Organiriage, par serdiDev</a>',        
+    })
 }
 export default function contact() {    
     

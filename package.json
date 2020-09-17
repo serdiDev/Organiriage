@@ -15,6 +15,8 @@
     "cloudinary-react": "^1.6.6",
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-preset-env": "^6.7.0",
+    "sweetalert2": "^10.1.0",
+    "sweetalert2-react-content": "^3.2.0",
     "tailwindcss": "^1.6.0"
   },
   "license": "MIT"
